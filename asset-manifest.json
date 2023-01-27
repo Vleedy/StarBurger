@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/StarBurger/static/css/main.a546a7ff.css",
-    "main.js": "/StarBurger/static/js/main.803000ce.js",
+    "main.js": "/StarBurger/static/js/main.19bdf35f.js",
     "static/media/starburger-logo.png": "/StarBurger/static/media/starburger-logo.63f1a108f9fdbf8db622.png",
     "static/media/delivery-man.png": "/StarBurger/static/media/delivery-man.5dc2a2a4a913f6266844.png",
     "static/media/empty-cart.png": "/StarBurger/static/media/empty-cart.db905d1f4b063162f25b.png",
@@ -9,10 +9,10 @@
     "static/media/star.svg": "/StarBurger/static/media/star.d28383108004b702c34f2bd8f5d55dd5.svg",
     "index.html": "/StarBurger/index.html",
     "main.a546a7ff.css.map": "/StarBurger/static/css/main.a546a7ff.css.map",
-    "main.803000ce.js.map": "/StarBurger/static/js/main.803000ce.js.map"
+    "main.19bdf35f.js.map": "/StarBurger/static/js/main.19bdf35f.js.map"
   },
   "entrypoints": [
     "static/css/main.a546a7ff.css",
-    "static/js/main.803000ce.js"
+    "static/js/main.19bdf35f.js"
   ]
 }
