@@ -1,0 +1,84 @@
+@import '../../scss/variables';
+
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 150px;
+  margin: 0 auto;
+}
+
+.page {
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: $orange;
+  h2 {
+    font-size: 22px;
+    font-weight: 600;
+    color: #ffffff;
+  }
+}
+
+.back {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background: black;
+  position: relative;
+  border: none;
+  cursor: pointer;
+  &::after {
+    content: '';
+    width: 10px;
+    height: 10px;
+    border: solid #ffffff;
+    border-width: 2px 0 0 2px;
+    transform: translate(-45%, -50%) rotate(-45deg);
+    position: absolute;
+    left: 55%;
+    top: 50%;
+  }
+  &:hover {
+    opacity: 0.15;
+    transition: all 0.4s;
+  }
+  &:disabled {
+    opacity: 0.1;
+    width: 30px;
+    height: 30px;
+  }
+}
+
+.forward {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background: black;
+  position: relative;
+  border: none;
+  cursor: pointer;
+  &::after {
+    content: '';
+    width: 10px;
+    height: 10px;
+    border: solid #ffffff;
+    border-width: 2px 0 0 2px;
+    transform: translate(-45%, -50%) rotate(135deg);
+    position: absolute;
+    left: 45%;
+    top: 50%;
+  }
+  &:hover {
+    opacity: 0.15;
+    transition: all 0.4s;
+  }
+  &:disabled {
+    opacity: 0.1;
+    width: 30px;
+    height: 30px;
+  }
+}

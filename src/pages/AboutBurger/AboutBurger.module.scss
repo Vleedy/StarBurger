@@ -1,0 +1,158 @@
+@import '../../scss/variables';
+
+.wrapper {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  @media (max-width: 735px) {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.rating {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-bottom: 10px;
+  &__number {
+    font-weight: 300;
+  }
+  &__star {
+    margin: 0 5px;
+  }
+}
+
+.description__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 40%;
+  @media (max-width: 735px) {
+    width: 90%;
+  }
+}
+
+.title {
+  font-weight: 500;
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  font-weight: 300;
+  font-size: 16px;
+  margin-bottom: 25px;
+}
+
+.ingredients {
+  margin-bottom: 25px;
+  width: 100%;
+  margin-left: 0;
+}
+.slide {
+  width: 20%;
+}
+.ingredients__image {
+  margin: 0 5px;
+  &:hover {
+    opacity: 0.5;
+    transition: all 0.5s;
+  }
+}
+
+.controlpanel {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  width: 100%;
+}
+.choosesize__wrapper {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+}
+.choosesize__text {
+  margin-right: 10px;
+}
+.add__wrapper {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+}
+
+.button_add {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #fff;
+  border: solid 2px $orange;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  margin-right: 10px;
+  svg {
+    path {
+      fill: $orange;
+    }
+  }
+  &:hover {
+    background-color: $orange;
+    transition: all 0.5s;
+    svg {
+      path {
+        fill: #fff;
+      }
+    }
+  }
+  &:active {
+    opacity: 0.3;
+  }
+  @media (max-width: 735px) {
+    margin-top: 15px;
+  }
+}
+
+.price {
+  font-size: 35px;
+  font-weight: 900;
+  color: $orange;
+  @media (max-width: 735px) {
+    margin-top: 15px;
+  }
+}
+
+.button_back {
+  display: inline-block;
+  background-color: $black;
+  border-radius: 30px;
+  padding: 10px 20px;
+  min-width: 100px;
+  text-align: center;
+  cursor: pointer;
+  color: white;
+  position: absolute;
+  left: 17%;
+  @media (max-width: 1750px) {
+    left: 10%;
+  }
+  span {
+    color: white;
+  }
+  &:hover {
+    background-color: $orange;
+    transition: background-color 0.8s;
+  }
+  &:active {
+    background-color: #f24701;
+  }
+  @media (max-width: 735px) {
+    margin-top: 15px;
+  }
+}
